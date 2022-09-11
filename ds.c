@@ -94,7 +94,7 @@ void main()
      int *arr;
      arr=(int *)malloc(n*sizeof(int));
    
-    do
+   while(1)
   {
     
      printf("Enter number of elements");
@@ -134,7 +134,11 @@ void main()
       printf("\nDo you want another try\n");
       printf("Type 1 for Yes and 0 for No\n");
       scanf("%d",&c);
+       if(c==0)
+       {
+        break;
+       }
     
-  }while(c==1);
+  }
   free(arr);
 }
