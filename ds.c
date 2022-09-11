@@ -1,5 +1,5 @@
 #include<stdio.h>  
-#include<stdlib.h>                 //can be optimised by dma and n pointer
+#include<stdlib.h>                 //can be further optimised by n pointer
 
 void opt1(int *arr,int n)              //traverse function   
 {
