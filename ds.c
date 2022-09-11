@@ -83,8 +83,6 @@ void opt5(int *arr,int n)
         printf("%d\t",arr[i]);
     }
 }
-
-
 void main()
 {
      int n,a,i;
