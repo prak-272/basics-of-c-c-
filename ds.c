@@ -1,5 +1,5 @@
 #include<stdio.h>  
-#include<stdlib.h>                 //can be further optimised by n pointer
+#include<stdlib.h>                 //can be optimised by dma and n pointer
 
 void opt1(int *arr,int n)              //traverse function   
 {
@@ -93,8 +93,7 @@ void main()
      scanf("%d",&n);
      int *arr;
      arr=(int *)malloc(n*sizeof(int));
-   
-   while(1)
+while(1)   
   {
     
      printf("Enter number of elements");
@@ -134,10 +133,10 @@ void main()
       printf("\nDo you want another try\n");
       printf("Type 1 for Yes and 0 for No\n");
       scanf("%d",&c);
-       if(c==0)
-       {
+      if(c==0)
+      {
         break;
-       }
+      }
     
   }
   free(arr);
